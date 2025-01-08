@@ -57,7 +57,7 @@ def lambda_handler(event, context):
     # Adjust for Eastern Time (UTC-6)
     utc_now = datetime.now(timezone.utc)
     eastern_time = utc_now - timedelta(hours=5)  # Eastern Time is UTC-5 (or UTC-4 during daylight saving time)
-    today_date = eastern_time.strftime("%Y-%m-%d"
+    today_date = eastern_time.strftime("%Y-%m-%d")
     
     print(f"Fetching games for date: {today_date}")
     
